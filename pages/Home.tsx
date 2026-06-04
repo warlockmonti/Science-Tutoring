@@ -16,11 +16,12 @@ const Home: React.FC<HomeProps> = ({ onBookNow, onLeaveReview }) => {
               Biology • Chemistry • Physics
             </p>
             <h1 className="mt-4 max-w-3xl text-4xl font-extrabold leading-tight text-blue-950 sm:text-6xl">
-              Clear science tutoring for students who want confidence.
+              Struggling in science class?
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              One-on-one support for tough concepts, homework, labs, Regents/AP prep,
-              and the study habits that make science feel manageable.
+              Now offering one-on-one support for students struggling to understand science; breaking
+              down the concepts and building up their knowledge base to make science class feel more
+              manageable and potentially even fun!
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <button
@@ -40,14 +41,49 @@ const Home: React.FC<HomeProps> = ({ onBookNow, onLeaveReview }) => {
             </div>
           </div>
 
-          <div className="relative mx-auto aspect-square w-full max-w-sm">
-            <div className="absolute inset-0 rounded-full bg-lime-200/70 blur-3xl" />
-            <div className="relative flex h-full items-center justify-center rounded-[2rem] bg-blue-950 text-lime-300 shadow-2xl">
-              <div className="absolute h-28 w-28 rounded-full border-4 border-lime-300/80" />
-              <div className="electron absolute h-4 w-4 rounded-full bg-yellow-300" />
-              <div className="absolute h-3 w-3 rounded-full bg-white" />
-              <div className="absolute bottom-8 left-8 rounded-2xl bg-white/10 px-4 py-3 text-sm font-bold text-white backdrop-blur">
-                Learn the why, not just the answer.
+          <div className="relative mx-auto w-full max-w-sm">
+            <div className="absolute inset-6 rounded-full bg-lime-200/70 blur-3xl" />
+            <div className="relative overflow-hidden rounded-[2rem] bg-blue-950 p-6 text-white shadow-2xl">
+              <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full border-[18px] border-lime-300/20" />
+              <div className="absolute -bottom-12 -left-12 h-36 w-36 rounded-full bg-lime-300/10" />
+
+              <div className="relative rounded-2xl bg-white p-5 text-blue-950 shadow-xl">
+                <div className="flex items-center justify-between border-b border-slate-200 pb-4">
+                  <div>
+                    <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-lime-600">
+                      Study Plan
+                    </p>
+                    <h2 className="mt-1 text-2xl font-extrabold">From confused to confident</h2>
+                  </div>
+                  <span className="rounded-full bg-lime-200 px-3 py-1 text-sm font-extrabold text-blue-950">
+                    1:1
+                  </span>
+                </div>
+
+                <div className="mt-5 space-y-4">
+                  {[
+                    ['Diagnose', 'Find the exact concept that is getting in the way.'],
+                    ['Break Down', 'Turn big science ideas into simple, usable steps.'],
+                    ['Build Up', 'Practice until the student can explain it back.'],
+                  ].map(([title, text], index) => (
+                    <div key={title} className="flex gap-3">
+                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-900 text-sm font-extrabold text-white">
+                        {index + 1}
+                      </div>
+                      <div>
+                        <h3 className="text-base font-extrabold">{title}</h3>
+                        <p className="text-sm leading-6 text-slate-600">{text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="relative mt-5 rounded-2xl border border-white/15 bg-white/10 px-5 py-4 backdrop-blur">
+                <p className="text-sm font-bold leading-6 text-blue-50">
+                  Practical lessons, visual explanations, and steady encouragement for biology,
+                  chemistry, and physics.
+                </p>
               </div>
             </div>
           </div>
