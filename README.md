@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🔬 Science Tutoring Platform
 
-# Run and deploy your AI Studio app
+Welcome to the Science Tutoring booking platform! This platform provides an easy and intuitive way for students to schedule and manage their science tutoring sessions online.
 
-This contains everything you need to run your app locally.
+## 🚀 Access the Platform
 
-View your app in AI Studio: https://ai.studio/apps/7fc6dc79-bd0a-4891-bcde-2e4febfc7fdf
+You can access the live website and book your next tutoring session directly from your browser:
+👉 **[science-tutoring.vercel.app](https://science-tutoring.vercel.app)**
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🛠️ Run Locally
 
+If you are a developer looking to run the platform locally:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Prerequisites:** 
+- [Node.js](https://nodejs.org/) installed.
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/nick-montimurro/Science-Tutoring.git
+   cd Science-Tutoring
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the local host address provided in your terminal.
